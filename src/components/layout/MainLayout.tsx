@@ -23,15 +23,15 @@ const items: MenuProps["items"] = [
     children: [
       {
         key: "Create Admin",
-        label: "Create Admin",
+        label: <NavLink to="/admin/create-admin">Create Admin</NavLink>,
+      },
+      {
+        key: "Create Faculty",
+        label: <NavLink to="/admin/create-faculty">Create Faculty</NavLink>,
       },
       {
         key: "Create Student",
-        label: "Create Student",
-      },
-      {
-        key: "12",
-        label: "Profile1",
+        label: <NavLink to="/admin/create-student">Create Student</NavLink>,
       },
     ],
   },

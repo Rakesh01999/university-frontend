@@ -1,8 +1,9 @@
-
 const CreateStudent = () => {
   return (
-    <div>CreateStudent</div>
-  )
-}
+    <div>
+      <h1>CreateStudent</h1>
+    </div>
+  );
+};
 
-export default CreateStudent
+export default CreateStudent;
