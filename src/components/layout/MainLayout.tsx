@@ -52,10 +52,10 @@ const MainLayout = () => {
             height: "4rem",
             display: "flex",
             justifyContent: "center",
-            justifyItems: "center",
+            alignItems: "center",
           }}
         >
-          <h1 style={{ textAlign: "center" }}>PH University</h1>
+          <h1>PH University</h1>
         </div>
         <Menu
           theme="dark"
