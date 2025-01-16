@@ -6,7 +6,7 @@ import CreateStudent from "../pages/admin/CreateStudent";
 export const adminPaths2 = [
   {
     name: "Dashboard",
-    path: "/admin/dashboard",
+    path: "dashboard",
     element: <AdminDashboard />,
   },
   {
@@ -14,38 +14,24 @@ export const adminPaths2 = [
     children: [
       {
         name: "Create Admin",
-        path: "/admin/create-admin",
+        path: "create-admin",
         element: <AdminDashboard />,
       },
       {
         name: "Create Faculty",
-        path: "/admin/create-faculty",
+        path: "create-faculty",
         element: <CreateFaculty />,
       },
       {
         name: "Create Student",
-        path: "/admin/create-student",
+        path: "create-student",
         element: <CreateStudent />,
-      },
-    ],
-  },
-  {
-    name: "Course Management",
-    children: [
-      {
-        name: "Offered Course",
-        path: "/admin/create-admin",
-        element: <CreateAdmin />,
       },
     ],
   },
 ];
 
 export const adminPaths = [
-  {
-    index: true,
-    element: <AdminDashboard />,
-  },
   {
     path: "dashboard",
     element: <AdminDashboard />,
