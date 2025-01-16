@@ -24,16 +24,20 @@ const router = createBrowserRouter([
     ]
   },
   {
-    path: "/",
+    path: "/admin",
     element: <App />,
     children: [
       {
-        path: "create-student",
-        element: <CreateStudent />,
+        index: true,
+        element: <AdminDashboard />,
       },
       {
-        path: "/dashboard",
+        path: "dashboard",
         element: <AdminDashboard />,
+      },
+      {
+        path: "create-student",
+        element: <CreateStudent />,
       },
     ]
   },
