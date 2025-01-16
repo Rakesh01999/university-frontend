@@ -4,16 +4,41 @@ import CreateFaculty from "../pages/admin/CreateFaculty";
 import CreateStudent from "../pages/admin/CreateStudent";
 
 export const adminPaths2 = [
-    {
-        name: 'Dashboard',
-        path: '/admin/dashboard',
-        element: < AdminDashboard/>,
-    },{
-        name: 'User Management' ,
-        children: [
-            
-        ]
-    }
+  {
+    name: "Dashboard",
+    path: "/admin/dashboard",
+    element: <AdminDashboard />,
+  },
+  {
+    name: "User Management",
+    children: [
+      {
+        name: "Create Admin",
+        path: "/admin/create-admin",
+        element: <AdminDashboard />,
+      },
+      {
+        name: "Create Faculty",
+        path: "/admin/create-faculty",
+        element: <CreateFaculty />,
+      },
+      {
+        name: "Create Student",
+        path: "/admin/create-student",
+        element: <CreateStudent />,
+      },
+    ],
+  },
+  {
+    name: "Course Management",
+    children: [
+      {
+        name: "Offered Course",
+        path: "/admin/create-admin",
+        element: <CreateAdmin />,
+      },
+    ],
+  },
 ];
 
 export const adminPaths = [
