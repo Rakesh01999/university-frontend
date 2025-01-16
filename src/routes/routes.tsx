@@ -7,6 +7,8 @@ import Register from "../pages/Register";
 import AdminDashboard from "../pages/admin/AdminDashboard";
 import CreateStudent from "../pages/admin/CreateStudent";
 import AdminLayout from "../components/layout/AdminLayout";
+import CreateFaculty from "../pages/admin/CreateFaculty";
+import CreateAdmin from "../pages/admin/CreateAdmin";
 
 const router = createBrowserRouter([
   {
@@ -21,7 +23,7 @@ const router = createBrowserRouter([
         path: "contact",
         element: <Contact />,
       },
-    ]
+    ],
   },
   {
     path: "/admin",
@@ -39,7 +41,15 @@ const router = createBrowserRouter([
         path: "create-student",
         element: <CreateStudent />,
       },
-    ]
+      {
+        path: "create-faculty",
+        element: <CreateFaculty />,
+      },
+      {
+        path: "create-admin",
+        element: <CreateAdmin />,
+      },
+    ],
   },
   {
     path: "/login",
@@ -51,4 +61,4 @@ const router = createBrowserRouter([
   },
 ]);
 
-export default router ;
+export default router;
