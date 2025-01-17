@@ -5,10 +5,10 @@ import CreateFaculty from "../pages/admin/CreateFaculty";
 import CreateStudent from "../pages/admin/CreateStudent";
 import { NavLink } from "react-router-dom";
 
-// type TRoute = {
-//   path: string;
-//   element: ReactNode;
-// };
+type TRoute = {
+  path: string;
+  element: ReactNode;
+};
 
 type TSidebarItem = {
   key: string;
