@@ -4,37 +4,38 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import { adminPaths } from "./admin.routes";
 import { routesGenerator } from "../utils/routesGenerator";
+import { facultyPaths } from "./faculty.routes";
+import { studentPaths } from "./student.routes";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <App />,
   },
   {
-    path: "/admin",
-    element: <App />,
-    children: routesGenerator(adminPaths),
-  },
-  {
-    path: "/faculty",
+    path: '/admin',
     element: <App />,
     children: routesGenerator(adminPaths),
   },
   {
-    path: "/student",
+    path: '/faculty',
     element: <App />,
-    children: routesGenerator(adminPaths),
+    children: routesGenerator(facultyPaths),
   },
   {
-    path: "/login",
+    path: '/student',
+    element: <App />,
+    children: routesGenerator(studentPaths),
+  },
+  {
+    path: '/login',
     element: <Login />,
-    children: routesGenerator(adminPaths),
   },
   {
-    path: "/register",
+    path: '/register',
     element: <Register />,
-    children: routesGenerator(adminPaths),
   },
 ]);
+
 
 export default router;
