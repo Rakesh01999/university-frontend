@@ -1,4 +1,5 @@
-import { Layout, Menu, MenuProps } from "antd";
+// import { Layout, Menu, MenuProps } from "antd";
+import { Layout } from "antd";
 import {
   UploadOutlined,
   UserOutlined,
