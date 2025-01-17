@@ -43,6 +43,8 @@ const userRole = {
 };
 
 const Sidebar = () => {
+//   const role = 'admin';
+//   const role = 'faculty';
   const role = 'student';
   let sidebarItems;
 
