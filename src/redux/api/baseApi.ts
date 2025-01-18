@@ -6,14 +6,5 @@ export const baseApi = createApi({
         baseUrl: 'http://localhost:5000/api/v1',
         credentials: 'include',
     }),
-
-    endpoints: (builder) => ({
-        login: builder.mutation({
-            query: (userInfo) => ({
-                url: '/auth/login',
-                method: 'POST',
-                body: userInfo,
-            }),
-        }),
-    }),
+    endpoints: () => ({}),
 });
