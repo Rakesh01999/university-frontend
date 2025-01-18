@@ -15,12 +15,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/admin",
-    element: <App />,
-    // element: (
-    //   <ProtectedRoute>
-    //     <App />
-    //   </ProtectedRoute>
-    // ),
+    // element: <App />,
+    element: (
+      <ProtectedRoute>
+        <App />
+      </ProtectedRoute>
+    ),
     children: routesGenerator(adminPaths),
   },
   {
