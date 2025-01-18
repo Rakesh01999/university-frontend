@@ -4,7 +4,7 @@ import { useLoginMutation } from "../redux/features/auth/authApi";
 // import { useAppDispatch } from '../redux/hooks';
 import { setUser } from "../redux/features/auth/authSlice";
 import { verifyToken } from "../utils/verifyToken";
-import { useAppDispatch } from "../redux/features/hooks";
+import { useAppDispatch } from "../redux/hooks";
 
 const Login = () => {
   const dispatch = useAppDispatch();
