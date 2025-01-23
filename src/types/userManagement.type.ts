@@ -1,5 +1,4 @@
-// import { TAcademicDepartment, TAcademicFaculty, TAcademicSemester } from '.';
-import { TAcademicSemester } from '.';
+import { TAcademicDepartment, TAcademicFaculty, TAcademicSemester } from '.';
 
 export interface TStudent {
   _id: string;
@@ -19,8 +18,8 @@ export interface TStudent {
   profileImg: string;
   admissionSemester: TAcademicSemester;
   isDeleted: boolean;
-//   academicDepartment: TAcademicDepartment;
-//   academicFaculty: TAcademicFaculty;
+  academicDepartment: TAcademicDepartment;
+  academicFaculty: TAcademicFaculty;
   fullName: string;
 }
 
