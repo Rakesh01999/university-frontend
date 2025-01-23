@@ -1,13 +1,10 @@
 import { Button, Modal, Table } from 'antd';
-import {
-  useAddFacultiesMutation,
-  useGetAllCoursesQuery,
-} from '../../../redux/features/admin/courseManagement';
 import { useState } from 'react';
 import PHForm from '../../../components/form/PHForm';
 import PHSelect from '../../../components/form/PHSelect';
 import { useGetAcademicFacultiesQuery } from '../../../redux/features/admin/academicManagement.api';
 import { useGetAllFacultiesQuery } from '../../../redux/features/admin/userManagement.api';
+import { useAddFacultiesMutation,useGetAllCoursesQuery } from '../../../redux/features/admin/courseManagement';
 
 const Courses = () => {
   // const [params, setParams] = useState<TQueryParam[] | undefined>(undefined);
