@@ -4,6 +4,7 @@ import PHInput from '../../../components/form/PHInput';
 import { Button, Col, Divider, Form, Input, Row } from 'antd';
 import PHSelect from '../../../components/form/PHSelect';
 import { bloodGroupOptions, genderOptions } from '../../../constants/global';
+
 import PHDatePicker from '../../../components/form/PHDatePicker';
 import {
   useGetAcademicDepartmentsQuery,
@@ -46,7 +47,8 @@ const studentDummyData = {
     },
 
     admissionSemester: '65bb60ebf71fdd1add63b1c0',
-    academicDepartment: '65b4acae3dc8d4f3ad83e416',
+    // academicDepartment: '65b4acae3dc8d4f3ad83e416',
+    academicDepartment: '67920518a11f54a09614a8d2',
   },
 };
 
@@ -84,7 +86,8 @@ const studentDefaultValues = {
   },
 
   admissionSemester: '65bb60ebf71fdd1add63b1c0',
-  academicDepartment: '65b4acae3dc8d4f3ad83e416',
+  // academicDepartment: '65b4acae3dc8d4f3ad83e416',
+  academicDepartment: '67920518a11f54a09614a8d2',
 };
 
 const CreateStudent = () => {
