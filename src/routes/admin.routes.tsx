@@ -1,5 +1,5 @@
 import AdminDashboard from '../pages/admin/AdminDashboard';
-import CreateAdmin from '../pages/admin/CreateAdmin';
+import CreateAdmin from '../pages/admin/userManagement/CreateAdmin';
 import CreateFaculty from '../pages/admin/CreateFaculty';
 import CreateStudent from '../pages/admin/CreateStudent';
 import AcademicDepartment from '../pages/admin/academicManagement/AcademicDepartment';
