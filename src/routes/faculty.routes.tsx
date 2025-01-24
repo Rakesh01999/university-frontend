@@ -1,6 +1,7 @@
 import FacultyDashboard from '../pages/faculty/FacultyDashboard';
-import MyCourses from '../pages/faculty/MyCourses';
-import MyStudents from '../pages/faculty/MyStudents';
+import MyCourses from './MyCourses';
+import MyStudents from './MyStudents';
+
 export const facultyPaths = [
   {
     name: 'Dashboard',
